@@ -15,7 +15,7 @@ app.use("/api/users",userRoutes);
 const startServer = async () =>{
     await connectDB();
 
-    app.listen(process.env.PORT || 5000 ,()=>{
+    app.listen(process.env.PORT ||  ,()=>{
         console.log(`server is runing on port ${process.env.PORT || 5000}`);
     });
 };
