@@ -10,13 +10,13 @@ app.get("/",(req,res)=>{
     res.send("Node js and MongoDB API is runing ")
 });
 
-app.use("/api/users",userRoutes);
+app.use("/api/users",userRoutes); 
 
 const startServer = async () =>{
     await connectDB();
 
     app.listen(process.env.PORT || 5000 ,()=>{
-        console.log(`server is runing on port ${process.env.PORT || 5000}`);
+        console. log(`server is runing on port ${process.env.PORT || 5000}`);
     });
 };
 startServer()

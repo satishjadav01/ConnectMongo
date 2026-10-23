@@ -7,12 +7,12 @@ const userSchema = new mongoose.Schema(
             require:true
         },
         email:{
-            type:String  ,
-            require:true,
-            unique:true,
+            type:String ,
+            require:true, 
+            unique:true,  
         }, 
         age:{
-            type:Number,
+            type:Number , 
         },
     },
     {timestamps:true}
