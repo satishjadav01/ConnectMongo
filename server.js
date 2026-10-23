@@ -19,4 +19,3 @@ const startServer = async () =>{
         console.log(`server is runing on port ${process.env.PORT || 5000}`);
     });
 };
-startServer()
