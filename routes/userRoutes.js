@@ -32,7 +32,7 @@ router.get("/:id", async (req,res)=>{
         res.status(200).json(user)
     } catch (error) {
         res.status(400).json({message:"User Not Found"})
-    }
+    } 
 });
 
 module.exports = router;
