@@ -10,7 +10,7 @@ app.get("/",(req,res)=>{
     res.send("Node js and MongoDB API is runing ")
 });
 
-app.use("/api/users",userRoutes); 
+app.use("/api/users",userRoutes);  
 
 const startServer = async () =>{
     await connectDB();
